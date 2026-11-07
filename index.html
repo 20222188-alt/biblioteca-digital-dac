@@ -110,6 +110,7 @@
         }
 
         .hero:before {
+            pointer-events: none;
             content: '';
             position: absolute;
             width: 420px;
@@ -143,9 +144,27 @@
         }
 
         .busqueda {
-            display: flex;
-            max-width: 530px;
-            gap: 9px
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    max-width: 530px;
+    gap: 9px;
+}
+
+        .busqueda input {
+            position: relative;
+            z-index: 11;
+            min-width: 0;
+            flex: 1;
+            border: 0;
+            border-radius: 10px;
+            padding: 13px 15px;
+            font: inherit;
+            font-size: 16px;
+            background: #ffffff;
+            color: #203851;
+            pointer-events: auto;
         }
 
         .busqueda input {
@@ -453,7 +472,7 @@
         <section class="hero" aria-labelledby="titulo-principal">
             <div>
                 <div class="etiqueta">Biblioteca Digital Escolar</div>
-                <h1 id="titulo-principal">Biblioteca Digital</h1>
+                <h1 id="titulo-principal">nombre propuesto por los estudiantes</h1>
                 <p>Explora, consulta y disfruta de nuestra colección de libros y recursos educativos.</p>
                 <form class="busqueda" action="buscar.html" method="get">
                     <input type="search" name="q" placeholder="Buscar libros, cuentos o autores..."
