@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Secundaria | Biblioteca Digital DAC</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        /* ENCABEZADO INSTITUCIONAL */
+
+        .encabezado-biblioteca {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .identidad {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .identidad img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .identidad strong {
+            display: block;
+            font-size: 17px;
+            line-height: 1.4;
+        }
+
+        .identidad span {
+            display: block;
+            font-size: 13px;
+            color: #61758b;
+            margin-top: 3px;
+        }
+
+        .enlace-inicio {
+            padding: 10px 20px;
+            background: #eaf3fb;
+            border-radius: 9px;
+            white-space: nowrap;
+        }
+
+        .enlace-inicio:hover {
+            background: #d7e9f8;
+        }
+
+        /* PRESENTACIÓN */
+
+        .intro-seccion {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .intro-seccion h2 {
+            color: #12345b;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .intro-seccion p {
+            color: #61758b;
+            line-height: 1.6;
+        }
+
+        /* ADAPTACIÓN A CELULARES */
+
+        @media (max-width: 600px) {
+
+            .identidad img {
+                width: 43px;
+                height: 43px;
+            }
+
+            .identidad strong {
+                font-size: 13px;
+            }
+
+            .identidad span {
+                font-size: 11px;
+            }
+
+            .enlace-inicio {
+                padding: 9px 12px;
+                font-size: 13px;
+            }
+
+            .intro-seccion h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado-biblioteca">
+
+        <div class="identidad">
+
+            <img
+                src="imagenes/escudo.png"
+                alt="Escudo del colegio"
+            >
+
+            <div>
+                <strong>
+                    I.E. N.º 1206 "Daniel Alcides Carrión"
+                </strong>
+
+                <span>Biblioteca Digital Escolar</span>
+            </div>
+
+        </div>
+
+        <a class="enlace-inicio" href="index.html">
+            Inicio
+        </a>
+
+    </header>
+
+    <!-- PORTADA -->
+
+    <section class="hero">
+
+        <h1>Educación Secundaria</h1>
+
+        <p>
+            Explora los libros y materiales educativos
+            organizados por áreas curriculares.
+        </p>
+
+    </section>
+
+    <!-- CONTENIDO -->
+
+    <main class="container">
+
+        <a class="back" href="index.html">
+            ← Volver al inicio
+        </a>
+
+        <div class="intro-seccion">
+
+            <h2>Áreas curriculares</h2>
+
+            <p>
+                Selecciona un área para consultar
+                los libros disponibles en nuestra biblioteca.
+            </p>
+
+        </div>
+
+        <!-- LAS TARJETAS SE CARGAN AUTOMÁTICAMENTE -->
+
+        <div class="cards" id="areas"></div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            I.E. N.º 1206 "Daniel Alcides Carrión"
+        </p>
+
+        <p>
+            Biblioteca Digital Escolar © 2026
+        </p>
+
+    </footer>
+
+    <!-- CARGAR ÁREAS DESDE EL CATÁLOGO -->
+
+    <script src="js/catalogo.js"></script>
+
+    <script>
+        cargarAreas("secundaria");
+    </script>
+
+</body>
+</html>

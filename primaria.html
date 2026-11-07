@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Educación Primaria | Biblioteca Digital DAC</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .encabezado-biblioteca {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .identidad {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .identidad img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .identidad strong {
+            display: block;
+            font-size: 17px;
+            line-height: 1.4;
+        }
+
+        .identidad span {
+            display: block;
+            font-size: 13px;
+            color: #61758b;
+            margin-top: 3px;
+        }
+
+        .enlace-inicio {
+            padding: 10px 20px;
+            background: #eaf3fb;
+            border-radius: 9px;
+            white-space: nowrap;
+            transition: background .2s;
+        }
+
+        .enlace-inicio:hover {
+            background: #d7e9f8;
+        }
+
+        .intro-areas {
+            text-align: center;
+            margin: 0 0 26px;
+        }
+
+        .intro-areas h2 {
+            color: #12345b;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .intro-areas p {
+            color: #61758b;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .identidad img {
+                width: 43px;
+                height: 43px;
+            }
+
+            .identidad strong {
+                font-size: 13px;
+            }
+
+            .identidad span {
+                font-size: 11px;
+            }
+
+            .enlace-inicio {
+                padding: 9px 12px;
+                font-size: 13px;
+            }
+
+            .intro-areas h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado-biblioteca">
+        <div class="identidad">
+            <img src="imagenes/escudo.png" alt="Escudo del colegio">
+            <div>
+                <strong>I.E. N.º 1206 "Daniel Alcides Carrión"</strong>
+                <span>Biblioteca Digital Escolar</span>
+            </div>
+        </div>
+
+        <a class="enlace-inicio" href="index.html">Inicio</a>
+    </header>
+
+    <section class="hero">
+        <h1>Educación Primaria</h1>
+        <p>Explora los libros organizados por áreas curriculares.</p>
+    </section>
+
+    <main class="container">
+        <a class="back" href="index.html">← Volver al inicio</a>
+
+        <div class="intro-areas">
+            <h2>Áreas curriculares</h2>
+            <p>Selecciona un área para consultar los libros disponibles.</p>
+        </div>
+
+        <div class="cards" id="areas"></div>
+    </main>
+
+    <footer>
+        <p>I.E. N.º 1206 "Daniel Alcides Carrión"</p>
+        <p>Biblioteca Digital Escolar © 2026</p>
+    </footer>
+
+    <script src="js/catalogo.js"></script>
+    <script>
+        cargarAreas("primaria");
+    </script>
+
+</body>
+</html>

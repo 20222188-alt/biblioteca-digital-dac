@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Consulta y Referencia | Biblioteca Digital DAC</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        /* ENCABEZADO INSTITUCIONAL */
+
+        .encabezado-biblioteca {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .identidad {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .identidad img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+
+        .identidad strong {
+            display: block;
+            font-size: 17px;
+            line-height: 1.4;
+        }
+
+        .identidad span {
+            display: block;
+            font-size: 13px;
+            color: #61758b;
+            margin-top: 3px;
+        }
+
+        .enlace-inicio {
+            padding: 10px 20px;
+            background: #eaf3fb;
+            border-radius: 9px;
+            white-space: nowrap;
+        }
+
+        .enlace-inicio:hover {
+            background: #d7e9f8;
+        }
+
+        /* PRESENTACIÓN */
+
+        .intro-seccion {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .intro-seccion h2 {
+            color: #12345b;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .intro-seccion p {
+            color: #61758b;
+            line-height: 1.6;
+        }
+
+        /* TARJETA CON IMAGEN 3D */
+
+        .tarjeta-referencia {
+            max-width: 410px;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 1px solid #e4edf6;
+            background: white;
+            text-align: center;
+            box-shadow: 0 5px 22px #14365614;
+            transition: transform .25s ease,
+                        box-shadow .25s ease;
+        }
+
+        .tarjeta-referencia:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px #14365625;
+        }
+
+        .imagen-referencia {
+            height: 235px;
+            background: linear-gradient(
+                145deg,
+                #edf6fd,
+                #ffffff
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .imagen-referencia img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform .3s ease;
+        }
+
+        .tarjeta-referencia:hover .imagen-referencia img {
+            transform: scale(1.04);
+        }
+
+        .contenido-referencia {
+            padding: 25px;
+        }
+
+        .contenido-referencia h2 {
+            color: #12345b;
+            font-size: 22px;
+            margin: 0 0 12px;
+        }
+
+        .contenido-referencia p {
+            color: #61758b;
+            line-height: 1.6;
+        }
+
+        .boton-referencia {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 13px 28px;
+            background: #12345b;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background .2s ease;
+        }
+
+        .boton-referencia:hover {
+            background: #176b9d;
+        }
+
+        /* ADAPTACIÓN A CELULARES */
+
+        @media (max-width: 600px) {
+            .identidad img {
+                width: 43px;
+                height: 43px;
+            }
+
+            .identidad strong {
+                font-size: 13px;
+            }
+
+            .identidad span {
+                font-size: 11px;
+            }
+
+            .enlace-inicio {
+                padding: 9px 12px;
+                font-size: 13px;
+            }
+
+            .imagen-referencia {
+                height: 200px;
+            }
+
+            .intro-seccion h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado-biblioteca">
+
+        <div class="identidad">
+            <img
+                src="imagenes/escudo.png"
+                alt="Escudo del colegio"
+            >
+
+            <div>
+                <strong>
+                    I.E. N.º 1206 "Daniel Alcides Carrión"
+                </strong>
+                <span>Biblioteca Digital Escolar</span>
+            </div>
+        </div>
+
+        <a class="enlace-inicio" href="index.html">
+            Inicio
+        </a>
+
+    </header>
+
+    <!-- PORTADA DE SECCIÓN -->
+
+    <section class="hero">
+        <h1>Consulta y Referencia</h1>
+        <p>
+            Explora enciclopedias, diccionarios, atlas
+            y materiales de consulta académica.
+        </p>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="container">
+
+        <a class="back" href="index.html">
+            ← Volver al inicio
+        </a>
+
+        <div class="intro-seccion">
+            <h2>Recursos de consulta</h2>
+            <p>
+                Encuentra materiales de referencia para
+                complementar tus actividades escolares
+                y ampliar tus conocimientos.
+            </p>
+        </div>
+
+        <div class="tarjeta-referencia">
+
+            <div class="imagen-referencia">
+                <img
+                    src="imagenes/areas/consulta-referencia.png"
+                    alt="Enciclopedias, diccionarios y atlas"
+                >
+            </div>
+
+            <div class="contenido-referencia">
+
+                <h2>Colección de Consulta y Referencia</h2>
+
+                <p>
+                    Accede a enciclopedias, diccionarios,
+                    atlas y otros materiales bibliográficos
+                    disponibles en la biblioteca.
+                </p>
+
+                <a
+                    class="boton-referencia"
+                    href="libros.html?nivel=transversal"
+                >
+                    Explorar libros
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+        <p>
+            I.E. N.º 1206 "Daniel Alcides Carrión"
+        </p>
+
+        <p>
+            Biblioteca Digital Escolar © 2026
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Catálogo de libros | Biblioteca Daniel Alcides Carrión</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header><strong>Biblioteca Digital · I.E. N.º 1206 Daniel Alcides Carrión</strong><a href="index.html">Inicio</a></header>
+    <section class="hero">
+        <h1>Catálogo de libros</h1>
+        <p>Consulta los títulos disponibles en la biblioteca</p>
+    </section>
+    <main class="container"><a class="back" href="index.html">← Volver al inicio</a>
+        <div class="controls"><input id="q" placeholder="Buscar por título, autor o editorial"
+                aria-label="Buscar libros"><select id="nivel">
+                <option value="">Todos los niveles</option>
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="docente">Formación docente</option>
+                <option value="transversal">Consulta y referencia</option>
+            </select><select id="area">
+                <option value="">Todas las áreas</option>
+            </select></div>
+        <p class="muted" id="contador">Cargando catálogo…</p>
+        <div class="book-grid" id="resultados"></div>
+    </main>
+    <footer>I.E. N.º 1206 «Daniel Alcides Carrión» · Biblioteca Digital</footer>
+    <script src="js/catalogo.js"></script>
+    <script>iniciarCatalogo()</script>
+</body>
+
+</html>

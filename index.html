@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Biblioteca Digital Escolar de la I.E. N.º 1206 Daniel Alcides Carrión">
+    <title>Biblioteca Digital | I.E. 1206 DAC</title>
+    <style>
+        :root {
+            --azul: #12345b;
+            --oscuro: #092b50;
+            --celeste: #e8f5ff;
+            --fondo: #f3f7fc;
+            --texto: #203851;
+            --gris: #62778d
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--fondo);
+            color: var(--texto);
+            font-family: 'Segoe UI', Arial, sans-serif
+        }
+
+        a:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #65b8ef;
+            outline-offset: 3px
+        }
+
+        .barra {
+            background: #092c53;
+            border-bottom: 1px solid #16446f;
+            padding: 12px max(22px, calc((100% - 1180px)/2));
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        .identidad {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            min-width: 0
+        }
+
+        .identidad img {
+            width: 68px;
+            height: 68px;
+            object-fit: contain
+        }
+
+        .identidad strong {
+            display: block;
+            font-size: clamp(15px, 2vw, 20px);
+            color: #fff;
+            line-height: 1.3
+        }
+
+        .identidad span {
+            display: block;
+            font-size: 14px;
+            color: #d7eaff;
+            margin-top: 3px
+        }
+
+        .nav {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 650;
+            padding: 10px 15px;
+            border-radius: 9px
+        }
+
+        .nav a:hover,
+        .nav .activo {
+            background: #1674b8
+        }
+
+        main {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 24px 20px 44px
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            align-items: center;
+            min-height: 230px;
+            padding: 28px 42px;
+            border-radius: 22px;
+            background: linear-gradient(115deg, #092a52 10%, #0d5794 70%, #64b9ed);
+            color: #fff;
+            box-shadow: 0 10px 26px #1436561a
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border: 65px solid #ffffff0c;
+            border-radius: 50%;
+            right: -125px;
+            top: -205px
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 4vw, 43px);
+            line-height: 1.15;
+            margin: 8px 0 12px
+        }
+
+        .hero p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e1f2ff;
+            max-width: 540px;
+            margin: 0 0 20px
+        }
+
+        .etiqueta {
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: 1.4px;
+            color: #b9e8ff;
+            text-transform: uppercase
+        }
+
+        .busqueda {
+            display: flex;
+            max-width: 530px;
+            gap: 9px
+        }
+
+        .busqueda input {
+            min-width: 0;
+            flex: 1;
+            border: 0;
+            border-radius: 10px;
+            padding: 13px 15px;
+            font: inherit
+        }
+
+        .busqueda button {
+            border: 0;
+            border-radius: 10px;
+            padding: 12px 20px;
+            background: #fff;
+            color: var(--azul);
+            font-weight: 750;
+            cursor: pointer
+        }
+
+        .busqueda button:hover {
+            background: #dff2ff
+        }
+
+        .hero-arte {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .hero-arte img {
+            width: 100%;
+            max-height: 185px;
+            object-fit: contain;
+            border-radius: 16px;
+            mix-blend-mode: screen
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 18px 0 17px
+        }
+
+        .titulo h2 {
+            font-size: clamp(23px, 3vw, 29px);
+            color: var(--azul);
+            margin: 0 0 7px
+        }
+
+        .titulo p {
+            color: var(--gris);
+            margin: 0
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px
+        }
+
+        .tarjeta {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            min-width: 0;
+            min-height: 157px;
+            padding: 15px 21px;
+            border: 1px solid #dce8f3;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #fff 74%, #e0f3ff);
+            box-shadow: 0 5px 18px #14365610;
+            transition: transform .2s, box-shadow .2s
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px #14365620
+        }
+
+        .tarjeta:nth-child(4n+2) {
+            background: linear-gradient(135deg, #fff 76%, #edf0ff)
+        }
+
+        .tarjeta:nth-child(4n+3) {
+            background: linear-gradient(135deg, #fff 76%, #ecf9ef)
+        }
+
+        .tarjeta:nth-child(4n+4) {
+            background: linear-gradient(135deg, #fff 76%, #fff4e6)
+        }
+
+        .ilustracion {
+            width: 200px;
+            min-width: 200px;
+            height: 128px;
+            display: grid;
+            place-items: center;
+            font-size: 80px;
+            line-height: 1;
+            filter: drop-shadow(0 9px 6px #173f631b)
+        }
+
+        .ilustracion img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain
+        }
+
+        .tarjeta-contenido {
+            min-width: 0;
+            flex: 1
+        }
+
+        .tarjeta h3 {
+            color: var(--azul);
+            font-size: 22px;
+            margin: 0 0 7px
+        }
+
+        .tarjeta p {
+            font-size: 14px;
+            line-height: 1.55;
+            color: var(--gris);
+            margin: 0 0 10px
+        }
+
+        .boton {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #123c6c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 9px;
+            padding: 10px 18px;
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .boton:hover {
+            background: #176b9d
+        }
+
+        .estadisticas{
+            display:grid;
+            grid-template-columns:repeat(3,minmax(0,1fr));
+            gap:16px;
+            margin:22px 0 28px;
+        }
+
+        .estadistica {
+            background: #fff;
+            border: 1px solid #e0eaf4;
+            border-radius: 16px;
+            padding: 19px;
+            text-align: center;
+            box-shadow: 0 4px 14px #1436560b
+        }
+
+        .estadistica strong {
+            display: block;
+            font-size: 27px;
+            color: var(--azul)
+        }
+
+        .estadistica span {
+            font-size: 13px;
+            color: var(--gris)
+        }
+
+        footer {
+            background: var(--oscuro);
+            color: #e5f1fc;
+            text-align: center;
+            padding: 23px 15px;
+            font-size: 13px
+        }
+
+        footer p {
+            margin: 6px 0
+        }
+
+        @media(max-width:900px) {
+            .tarjeta {
+                gap: 12px;
+                padding: 18px
+            }
+
+            .ilustracion {
+                width: 115px;
+                min-width: 115px;
+                height: 100px;
+                font-size: 65px
+            }
+
+            .tarjeta h3 {
+                font-size: 18px
+            }
+
+            .hero-arte img {
+                max-height: 145px
+            }
+        }
+
+        @media(max-width:650px) {
+            .barra {
+                padding: 12px 16px
+            }
+
+            .identidad img {
+                width: 52px;
+                height: 52px
+            }
+
+            .identidad span {
+                font-size: 12px
+            }
+
+            .nav a {
+                padding: 8px;
+                font-size: 13px
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 28px 22px;
+                min-height: 0
+            }
+
+            .hero-arte {
+                display: none
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr
+            }
+
+            .tarjeta {
+                min-height: 155px
+            }
+
+            .estadisticas {
+                gap: 8px
+            }
+
+            .estadistica {
+                padding: 14px 5px
+            }
+
+            .estadistica strong {
+                font-size: 22px
+            }
+
+            .estadistica span {
+                font-size: 11px
+            }
+
+            main {
+                padding: 16px 14px 35px
+            }
+        }
+
+        @media(max-width:370px) {
+            .busqueda {
+                flex-direction: column
+            }
+
+            .nav a {
+                font-size: 12px
+            }
+
+            .tarjeta {
+                gap: 8px
+            }
+
+            .ilustracion {
+                width: 85px;
+                min-width: 85px;
+                font-size: 55px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            .tarjeta {
+                transition: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="barra" aria-label="Navegación principal">
+        <div class="identidad">
+            <img src="imagenes/escudo.png" alt="Escudo del colegio">
+            <div><strong>I.E. N.º 1206 «Daniel Alcides Carrión»</strong><span>Biblioteca Digital Escolar</span></div>
+        </div>
+        <div class="nav"><a class="activo" href="index.html" aria-current="page">Inicio</a><a
+                href="libros.html?vista=todos">Catálogo</a></div>
+    </nav>
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <div>
+                <div class="etiqueta">Biblioteca Digital Escolar</div>
+                <h1 id="titulo-principal">Biblioteca Digital</h1>
+                <p>Explora, consulta y disfruta de nuestra colección de libros y recursos educativos.</p>
+                <form class="busqueda" action="buscar.html" method="get">
+                    <input type="search" name="q" placeholder="Buscar libros, cuentos o autores..."
+                        aria-label="Buscar libros, cuentos o autores" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="hero-arte" aria-hidden="true"><img src="imagenes/portada/hero.webp" alt=""></div>
+        </section>
+        <section class="estadisticas" aria-label="Estadísticas de la biblioteca">
+            <div class="estadistica"><strong id="totalLibros">0</strong><span>Libros registrados</span></div>
+            <div class="estadistica"><strong id="totalCuentos">0</strong><span>Cuentos digitales</span></div>
+            <div class="estadistica"><strong id="totalAudios">0</strong><span>Audiocuentos</span></div>
+        </section>
+        <section aria-labelledby="titulo-secciones">
+            <div class="titulo">
+                <h2 id="titulo-secciones">Explora nuestra biblioteca</h2>
+                <p>Selecciona una sección para comenzar</p>
+            </div>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/primaria.webp" alt=""></div>
+                    <div class="tarjeta-contenido">
+                        <h3>Educación Primaria</h3>
+                        <p>Libros organizados por grados y áreas educativas.</p><a class="boton"
+                            href="primaria.html">Explorar libros →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/secundaria.webp" alt="">
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3>Educación Secundaria</h3>
+                        <p>Libros de las diferentes áreas de aprendizaje.</p><a class="boton"
+                            href="secundaria.html">Explorar libros →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/catalogo.webp" alt=""></div>
+                    <div class="tarjeta-contenido">
+                        <h3>Catálogo general</h3>
+                        <p>Consulta todos los libros de nuestra biblioteca.</p><a class="boton"
+                            href="libros.html?vista=todos">Explorar libros →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/docente.webp" alt=""></div>
+                    <div class="tarjeta-contenido">
+                        <h3>Formación Docente</h3>
+                        <p>Materiales educativos destinados a los docentes.</p><a class="boton"
+                            href="docente.html">Explorar libros →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/referencia.webp" alt="">
+                    </div>
+                    <div class="tarjeta-contenido">
+                        <h3>Consulta y Referencia</h3>
+                        <p>Enciclopedias, diccionarios, atlas y otros recursos.</p><a class="boton"
+                            href="transversal.html">Explorar libros →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/cuentos.webp" alt=""></div>
+                    <div class="tarjeta-contenido">
+                        <h3>Cuentos Digitales</h3>
+                        <p>Historias para disfrutar de la lectura. Colección en preparación.</p><a class="boton"
+                            href="cuentos.html">Ver sección →</a>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="ilustracion" aria-hidden="true"><img src="imagenes/portada/audios.webp" alt=""></div>
+                    <div class="tarjeta-contenido">
+                        <h3>Audiocuentos</h3>
+                        <p>Historias narradas para escuchar. Colección en preparación.</p><a class="boton"
+                            href="audiocuentos.html">Ver sección →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>I.E. N.º 1206 «Daniel Alcides Carrión» · Biblioteca Digital Escolar © 2026</p>
+        <p>Proyecto de Prácticas Preprofesionales en la Comunidad</p>
+    </footer>
+    <script src="js/estadisticas.js"></script>
+</body>
+
+</html>

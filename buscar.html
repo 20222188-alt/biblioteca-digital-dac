@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buscar libros | Biblioteca Digital DAC</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .busqueda-contenedor {
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        .formulario-busqueda {
+            display: flex;
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .formulario-busqueda input {
+            flex: 1;
+            min-width: 0;
+            padding: 14px 17px;
+            border: 1px solid #cbd8e5;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .formulario-busqueda input:focus {
+            border-color: #176b9d;
+            box-shadow: 0 0 0 3px #176b9d20;
+        }
+
+        .boton-buscar {
+            padding: 13px 25px;
+            background: #12345b;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .boton-buscar:hover {
+            background: #176b9d;
+        }
+
+        .informacion-resultados {
+            color: #61758b;
+            margin: 20px 0;
+        }
+
+        .resultados {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fill, minmax(210px, 1fr));
+            gap: 20px;
+        }
+
+        .libro-resultado {
+            background: white;
+            border: 1px solid #e4edf6;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px #14365615;
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .libro-resultado:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px #14365625;
+        }
+
+        .portada-resultado {
+            height: 230px;
+            background: linear-gradient(
+                145deg, #e8f3fb, #f7fbff
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portada-resultado img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .sin-portada {
+            font-size: 65px;
+            color: #176b9d;
+        }
+
+        .datos-libro {
+            padding: 18px;
+        }
+
+        .datos-libro h3 {
+            font-size: 17px;
+            color: #12345b;
+            margin: 0 0 12px;
+        }
+
+        .datos-libro p {
+            font-size: 14px;
+            color: #61758b;
+            margin: 7px 0;
+            line-height: 1.5;
+        }
+
+        .mensaje {
+            background: white;
+            border: 1px solid #e4edf6;
+            border-radius: 12px;
+            padding: 28px;
+            text-align: center;
+            color: #61758b;
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 600px) {
+            .formulario-busqueda {
+                flex-direction: column;
+            }
+
+            .boton-buscar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <strong>
+            📚 Biblioteca Digital · I.E. N.º 1206 DAC
+        </strong>
+        <a href="index.html">Inicio</a>
+    </header>
+
+    <section class="hero">
+        <h1>Buscar libros</h1>
+        <p>
+            Encuentra libros por título, autor o editorial
+        </p>
+    </section>
+
+    <main class="container busqueda-contenedor">
+
+        <a class="back" href="index.html">
+            ← Volver al inicio
+        </a>
+
+        <form
+            class="formulario-busqueda"
+            action="buscar.html"
+            method="get"
+        >
+            <input
+                type="search"
+                id="campoBusqueda"
+                name="q"
+                placeholder="Escribe el título, autor o editorial..."
+                aria-label="Buscar libros"
+                required
+            >
+
+            <button class="boton-buscar" type="submit">
+                🔎 Buscar
+            </button>
+        </form>
+
+        <p
+            class="informacion-resultados"
+            id="informacionResultados"
+            aria-live="polite"
+        ></p>
+
+        <div class="resultados" id="resultados"></div>
+
+    </main>
+
+    <footer>
+        I.E. N.º 1206 «Daniel Alcides Carrión»
+        · Biblioteca Digital
+    </footer>
+
+    <script>
+        const parametros = new URLSearchParams(
+            window.location.search
+        );
+
+        const consulta = (
+            parametros.get("q") || ""
+        ).trim();
+
+        const campoBusqueda = document.getElementById(
+            "campoBusqueda"
+        );
+
+        const resultados = document.getElementById(
+            "resultados"
+        );
+
+        const informacion = document.getElementById(
+            "informacionResultados"
+        );
+
+        campoBusqueda.value = consulta;
+
+        function normalizar(texto) {
+            return String(texto ?? "")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase()
+                .trim();
+        }
+
+        function crearElemento(etiqueta, clase, texto) {
+            const elemento = document.createElement(etiqueta);
+
+            if (clase) {
+                elemento.className = clase;
+            }
+
+            if (texto !== undefined) {
+                elemento.textContent = texto;
+            }
+
+            return elemento;
+        }
+
+        function crearTarjeta(libro) {
+            const tarjeta = crearElemento(
+                "article",
+                "libro-resultado"
+            );
+
+            const portada = crearElemento(
+                "div",
+                "portada-resultado"
+            );
+
+            const rutaPortada = libro.portada;
+
+            if (rutaPortada) {
+                const imagen = document.createElement("img");
+
+                imagen.src = rutaPortada;
+                imagen.alt = "Portada de " +
+                    (libro.titulo || "libro");
+
+                imagen.onerror = function () {
+                    portada.replaceChildren(
+                        crearElemento(
+                            "span",
+                            "sin-portada",
+                            "📖"
+                        )
+                    );
+                };
+
+                portada.appendChild(imagen);
+            } else {
+                portada.appendChild(
+                    crearElemento(
+                        "span",
+                        "sin-portada",
+                        "📖"
+                    )
+                );
+            }
+
+            const datos = crearElemento(
+                "div",
+                "datos-libro"
+            );
+
+            datos.appendChild(
+                crearElemento(
+                    "h3",
+                    "",
+                    libro.titulo || "Sin título"
+                )
+            );
+
+            const campos = [
+                ["Autor", libro.autor],
+                ["Editorial", libro.editorial],
+                ["Nivel", libro.nivel],
+                ["Área", libro.area],
+                ["Grado", libro.grado]
+            ];
+
+            campos.forEach(([nombre, valor]) => {
+                if (valor !== undefined &&
+                    valor !== null &&
+                    String(valor).trim() !== "") {
+
+                    const parrafo = document.createElement("p");
+                    const etiqueta = document.createElement("strong");
+
+                    etiqueta.textContent = nombre + ": ";
+                    parrafo.appendChild(etiqueta);
+                    parrafo.appendChild(
+                        document.createTextNode(String(valor))
+                    );
+
+                    datos.appendChild(parrafo);
+                }
+            });
+
+            tarjeta.appendChild(portada);
+            tarjeta.appendChild(datos);
+
+            return tarjeta;
+        }
+
+        function mostrarMensaje(mensaje) {
+            resultados.replaceChildren(
+                crearElemento("div", "mensaje", mensaje)
+            );
+        }
+
+        async function buscarLibros() {
+            if (!consulta) {
+                informacion.textContent =
+                    "Escribe una palabra para comenzar la búsqueda.";
+
+                return;
+            }
+
+            informacion.textContent = "Buscando libros...";
+
+            try {
+                const respuesta = await fetch(
+                    "datos/libros.json"
+                );
+
+                if (!respuesta.ok) {
+                    throw new Error(
+                        "No se pudo cargar el catálogo."
+                    );
+                }
+
+                const libros = await respuesta.json();
+
+                if (!Array.isArray(libros)) {
+                    throw new Error(
+                        "El catálogo no tiene el formato esperado."
+                    );
+                }
+
+                const palabras = normalizar(consulta)
+                    .split(/\s+/)
+                    .filter(Boolean);
+
+                const encontrados = libros.filter(libro => {
+                    const contenido = normalizar([
+                        libro.titulo,
+                        libro.autor,
+                        libro.editorial
+                    ].join(" "));
+
+                    return palabras.every(
+                        palabra => contenido.includes(palabra)
+                    );
+                });
+
+                informacion.textContent =
+                    encontrados.length +
+                    " resultado(s) para: " + consulta;
+
+                if (encontrados.length === 0) {
+                    mostrarMensaje(
+                        "No se encontraron libros con esa búsqueda."
+                    );
+                    return;
+                }
+
+                const fragmento = document.createDocumentFragment();
+
+                encontrados.forEach(libro => {
+                    fragmento.appendChild(crearTarjeta(libro));
+                });
+
+                resultados.replaceChildren(fragmento);
+
+            } catch (error) {
+                console.error(error);
+
+                informacion.textContent =
+                    "No se pudo completar la búsqueda.";
+
+                mostrarMensaje(
+                    "No fue posible cargar el catálogo. " +
+                    "Verifica que estés usando Live Server " +
+                    "y que exista datos/libros.json."
+                );
+            }
+        }
+
+        buscarLibros();
+    </script>
+
+</body>
+</html>
