@@ -246,7 +246,7 @@
     "nivel": "secundaria",
     "grado": null,
     "area": "ciencias-sociales",
-    "ejemplares": 2,
+    "ejemplares": 11,
     "ubicacion": "",
     "estado": "",
     "portada": "imagenes/portadas/calendario.png"
@@ -294,7 +294,7 @@
     "nivel": "secundaria",
     "grado": null,
     "area": "comunicacion",
-    "ejemplares": 2,
+    "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
     "portada": "imagenes/portadas/TradicionesPeruanas.png"
@@ -348,18 +348,6 @@
     "portada": "imagenes/portadas/concurso.png"
   },
   {
-    "titulo": "Convención sobre los derechos del niño",
-    "autor": "Ministerio de Educación",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "dpcc",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": "imagenes/portadas/DerechosDelNiño.png"
-  },
-  {
     "titulo": "La leyenda del Mio Cid",
     "autor": "Agustín Sánchez Aguilar",
     "editorial": "",
@@ -381,7 +369,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/el_guardian.png"
   },
   {
     "titulo": "Breve Antología didáctica",
@@ -393,7 +381,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/antologia_didactica.png"
   },
   {
     "titulo": "Pedro Páramo",
@@ -417,7 +405,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/dracula.png"
   },
   {
     "titulo": "Mitos, leyendas y cuentos peruanos",
@@ -429,7 +417,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/mitos_leyendas.png"
   },
   {
     "titulo": "Cuentos inolvidables según Julio Cortázar",
@@ -441,7 +429,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuentos_inolvidables.png"
   },
   {
     "titulo": "El misterio de la biblioteca más pequeña del mundo",
@@ -453,7 +441,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/misterio.png"
   },
   {
     "titulo": "Cuentos de té y otros árboles",
@@ -465,7 +453,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuentos_de_te.png"
   },
   {
     "titulo": "El príncipe que todo lo aprendió en los libros",
@@ -477,7 +465,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/el_principe.png"
   },
   {
     "titulo": "El príncipe y el mendigo",
@@ -489,7 +477,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/principe_y_mendigo.png"
   },
   {
     "titulo": "Tragedias completas",
@@ -501,7 +489,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/tragedia completa.png"
   },
   {
     "titulo": "Fantasmas en la red",
@@ -513,7 +501,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/fantasmas en la red.png"
   },
   {
     "titulo": "El barco fantasma",
@@ -525,7 +513,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/barco fantasma.png"
   },
   {
     "titulo": "Tartufo",
@@ -537,7 +525,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/tartufo.png"
   },
   {
     "titulo": "Amordazada",
@@ -549,7 +537,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/amordazada.png"
   },
   {
     "titulo": "El señor de las moscas",
@@ -561,7 +549,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/señor de moscas.png"
   },
   {
     "titulo": "Pedro Páramo: El llano en llamas",
@@ -573,7 +561,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/el llano en llamas.png"
   },
   {
     "titulo": "El Cristo villenas",
@@ -585,7 +573,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cristo villenas.png"
   },
   {
     "titulo": "El viejo saurio se retira",
@@ -597,7 +585,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/el viejo saurio.png"
   },
   {
     "titulo": "Navajas en el paladar",
@@ -609,7 +597,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/navajas.png"
   },
   {
     "titulo": "La ciudad y los perros",
@@ -621,7 +609,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ciudad de los perros.png"
   },
   {
     "titulo": "Tragedias (Edipo Rey / Edipo en Colono / Antígona / Electra)",
@@ -633,7 +621,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/edipo rey.png"
   },
   {
     "titulo": "Lectora de sueños",
@@ -645,7 +633,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/lectora de sueños.png"
   },
   {
     "titulo": "Hasta la casa de cartón",
@@ -657,19 +645,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Orientación vocacional",
-    "autor": "Estado peruano",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "tutoria",
-    "ejemplares": 7,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/casa de cartón.png"
   },
   {
     "titulo": "La nueva era del sueño",
@@ -681,7 +657,7 @@
     "ejemplares": 12,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/la nueva era del sueño.png"
   },
   {
     "titulo": "Nuestra poesía en el tiempo",
@@ -693,7 +669,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/nuestra poesia.png"
   },
   {
     "titulo": "La cocina de la escritura",
@@ -705,7 +681,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/la cocina de la escritura.png"
   },
   {
     "titulo": "TRAGEDIAS WILLIAM SHAKESPEARE",
@@ -717,7 +693,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/tragedias.png"
   },
   {
     "titulo": "Una verdad incómoda",
@@ -729,7 +705,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/verdad incomoda.png"
   },
   {
     "titulo": "Ética moral",
@@ -741,7 +717,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ética moral.png"
   },
   {
     "titulo": "Ética",
@@ -753,10 +729,10 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ética.png"
   },
   {
-    "titulo": "ambiental integrados con énfasis en educación en gestión",
+    "titulo": "Documento para el desarrollo de proyectos de educación ambiental integrados con énfasis en educación en gestión del riesgo de desastres.",
     "autor": "Ministerio de educación",
     "editorial": "",
     "nivel": "secundaria",
@@ -789,19 +765,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Tradiciones peruanas",
-    "autor": "Ricardo palma",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 6,
-    "ubicacion": "",
-    "estado": "",
-    "portada": "imagenes/portadas/TradicionesPeruanas.png"
+    "portada": "imagenes/portadas/obras maestras.png"
   },
   {
     "titulo": "Cuentos reunidos",
@@ -813,7 +777,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuentos reunidos.png"
   },
   {
     "titulo": "Un mundo para Julius",
@@ -825,7 +789,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/mundo para julius.png"
   },
   {
     "titulo": "Ortografía de la lengua española",
@@ -837,7 +801,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ortografia.png"
   },
   {
     "titulo": "Literatura universal",
@@ -849,7 +813,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/literatura universal.png"
   },
   {
     "titulo": "Historia de la literatura hispanoamericana",
@@ -861,7 +825,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia de literatura.png"
   },
   {
     "titulo": "Ciencia, tecnologia y ambiente - 3ero Secundaria",
@@ -873,7 +837,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cta.png"
   },
   {
     "titulo": "Cuaderno de trabajo de matematicas: Resolvemos problemas - 3ero secundaria",
@@ -885,7 +849,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/resolvemos problemas.png"
   },
   {
     "titulo": "Cuaderno de trabajo de comunicación: comprensión lectora -",
@@ -894,13 +858,13 @@
     "nivel": "secundaria",
     "grado": null,
     "area": "comunicacion",
-    "ejemplares": 2,
+    "ejemplares": 18,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuaderno de trabajo.png"
   },
   {
-    "titulo": "Antologia Literaria - 3ero secundaria",
+    "titulo": "Antologia Literaria - 3ro secundaria",
     "autor": "Ministerio de Educación",
     "editorial": "",
     "nivel": "secundaria",
@@ -909,22 +873,22 @@
     "ejemplares": 33,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/antologia.png"
   },
   {
-    "titulo": "Ficha de aprendizaje de comunicación - 3ero secundaria",
+    "titulo": "Ficha de aprendizaje de comunicación - 3ro secundaria",
     "autor": "Ministerio de Educación",
     "editorial": "",
     "nivel": "secundaria",
     "grado": 3,
     "area": "comunicacion",
-    "ejemplares": 6,
+    "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ficha de aprendizaje.png"
   },
   {
-    "titulo": "Ficha de matematica - 3ero secundaria",
+    "titulo": "Ficha de matematica - 3ro secundaria",
     "autor": "Ministerio de Educación",
     "editorial": "",
     "nivel": "secundaria",
@@ -933,7 +897,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/fichas de matemática.png"
   },
   {
     "titulo": "Ficha de matematica - 2do secundaria",
@@ -945,7 +909,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ficha matemática.png"
   },
   {
     "titulo": "Ficha de aprendizaje de comunicación - 2do secundaria",
@@ -954,10 +918,10 @@
     "nivel": "secundaria",
     "grado": 2,
     "area": "comunicacion",
-    "ejemplares": 3,
+    "ejemplares": 14,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ficha aprendizaje.png"
   },
   {
     "titulo": "Antologia literaria - 2do secundaria",
@@ -969,7 +933,7 @@
     "ejemplares": 94,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/antologia literaria.png"
   },
   {
     "titulo": "Texto escolar: Matematica - 2do secundaria",
@@ -981,7 +945,7 @@
     "ejemplares": 22,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/texto escolar.png"
   },
   {
     "titulo": "Cuaderno de trabajo de matemática: Resolvemos problemas",
@@ -990,10 +954,10 @@
     "nivel": "secundaria",
     "grado": null,
     "area": "matematica",
-    "ejemplares": 23,
+    "ejemplares": 24,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/resolver problemas.png"
   },
   {
     "titulo": "Texto escolar: Desarrollo personal, ciudadania y civica - 2do",
@@ -1005,7 +969,7 @@
     "ejemplares": 21,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/dpcc 2do.png"
   },
   {
     "titulo": "Cuaderno de fichas: Fuentes historicas - 2do secundaria",
@@ -1017,7 +981,7 @@
     "ejemplares": 14,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/fuentes históricas.png"
   },
   {
     "titulo": "Cartilla de ciencias sociales: Historia reciente del Perú - 5to",
@@ -1029,7 +993,7 @@
     "ejemplares": 25,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia reciente del perú.png"
   },
   {
     "titulo": "Texto escolar: Historia, geografía y economía - 2do secundaria",
@@ -1041,7 +1005,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia geografía 2do.png"
   },
   {
     "titulo": "Antologia literaria - 4to secundaria",
@@ -1053,7 +1017,7 @@
     "ejemplares": 42,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/antología literaria 4to.png"
   },
   {
     "titulo": "Texto escolar: Matemática - 4to secundaria",
@@ -1065,7 +1029,7 @@
     "ejemplares": 10,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matemática 4to.png"
   },
   {
     "titulo": "Texto escolar: Historia, geografía y economía - 4to secundaria",
@@ -1077,7 +1041,7 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia geografía 4to.png"
   },
   {
     "titulo": "Cuaderno de trabajo de matemática: Resolvemos problemas - 4to secundaria",
@@ -1089,7 +1053,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuaderno de trabajo 4to.png"
   },
   {
     "titulo": "Ficha de matemática - 4to secundaria",
@@ -1101,7 +1065,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ficha matemática 4to.png"
   },
   {
     "titulo": "Ficha de aprendizaje de comunicación - 4to secundaria",
@@ -1110,10 +1074,10 @@
     "nivel": "secundaria",
     "grado": 4,
     "area": "comunicacion",
-    "ejemplares": 6,
+    "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ficha comunicación.png"
   },
   {
     "titulo": "Cuaderno de fichas: Fuentes historicas - 5to secundaria",
@@ -1125,7 +1089,7 @@
     "ejemplares": 16,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuaderno de ficha 5to.png"
   },
   {
     "titulo": "Ciencia, tecnologia y ambiente - 5to Secundaria",
@@ -1137,19 +1101,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Cuaderno de trabajo de matemática: Resolvemos problemas -",
-    "autor": "Ministerio de Educación",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "matematica",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cta 5to.png"
   },
   {
     "titulo": "Texto escolar: Historia, geografía y economía - 5to secundaria",
@@ -1161,7 +1113,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia geografía 5to.png"
   },
   {
     "titulo": "Texto escolar: Matemática - 5to secundaria",
@@ -1173,19 +1125,7 @@
     "ejemplares": 13,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Cuaderno de trabajo de comunicación: comprensión lectora -",
-    "autor": "Ministerio de Educación",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 15,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matemática 5to.png"
   },
   {
     "titulo": "Comprensión lectora: Cuaderno de trabajo 5to secundaria",
@@ -1197,7 +1137,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comprensión lectora 5to.png"
   },
   {
     "titulo": "Basic Grammar in use",
@@ -1209,7 +1149,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/basic grammar.png"
   },
   {
     "titulo": "The Heinle Picture Dictionary",
@@ -1221,7 +1161,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/the heinle.png"
   },
   {
     "titulo": "Romeo and Juliet (Edición en Inglés)",
@@ -1233,7 +1173,7 @@
     "ejemplares": 11,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/romeo y juliet.png"
   },
   {
     "titulo": "The University of Chicago Spanish- English Dictionary",
@@ -1245,7 +1185,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/university.png"
   },
   {
     "titulo": "The X-Files: Squeeze",
@@ -1257,7 +1197,7 @@
     "ejemplares": 12,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/the x-fhiles.png"
   },
   {
     "titulo": "Serie 1 Everyday Activities",
@@ -1308,7 +1248,7 @@
     "portada": ""
   },
   {
-    "titulo": "Supercomputerma",
+    "titulo": "Supercomputerman",
     "autor": "Jeremy Taylor",
     "editorial": "",
     "nivel": "secundaria",
@@ -1317,7 +1257,7 @@
     "ejemplares": 13,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/supercomputer.png"
   },
   {
     "titulo": "Fichas en inglés",
@@ -1341,7 +1281,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/my little.png"
   },
   {
     "titulo": "Smart Choice",
@@ -1353,7 +1293,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/smart choice.png"
   },
   {
     "titulo": "Get Smart Workbook 1b",
@@ -1377,7 +1317,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/poptropica.png"
   },
   {
     "titulo": "Are you My Mother?",
@@ -1389,7 +1329,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/are you.png"
   },
   {
     "titulo": "Doubleday’s",
@@ -1413,7 +1353,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/enciclopedia.png"
   },
   {
     "titulo": "Libro del año 1987",
@@ -1425,7 +1365,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/libro 1987.png"
   },
   {
     "titulo": "Enciclopedia Larousse Ilustrada",
@@ -1437,7 +1377,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/larouse.png"
   },
   {
     "titulo": "Diccionario enciclopédico",
@@ -1449,7 +1389,7 @@
     "ejemplares": 14,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/enciclopedico.png"
   },
   {
     "titulo": "Enciclopedia Combi Visual",
@@ -1461,7 +1401,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/enciclopedia visual.png"
   },
   {
     "titulo": "Diccionario escolar",
@@ -1473,7 +1413,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diccionario escolar.png"
   },
   {
     "titulo": "Léxico de la Política",
@@ -1485,7 +1425,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/léxico.png"
   },
   {
     "titulo": "Diccionario enciclopédico ilustrado de lengua española",
@@ -1497,7 +1437,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diccionario español.png"
   },
   {
     "titulo": "Diccionario panhispánico de dudas",
@@ -1509,7 +1449,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diccionario.png"
   },
   {
     "titulo": "Real Academia española",
@@ -1533,7 +1473,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/santillana2.png"
   },
   {
     "titulo": "Enciclopedia Audiovisual historia del Perú – CD 2",
@@ -1578,7 +1518,7 @@
     "nivel": "secundaria",
     "grado": null,
     "area": "dpcc",
-    "ejemplares": 8,
+    "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
     "portada": "imagenes/portadas/DerechosDelNiño.png"
@@ -1593,7 +1533,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/autodidacta.png"
   },
   {
     "titulo": "Atlas National Geographic",
@@ -1605,7 +1545,7 @@
     "ejemplares": 14,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas.png"
   },
   {
     "titulo": "Atlas del Perú",
@@ -1617,7 +1557,7 @@
     "ejemplares": 14,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas del peru.png"
   },
   {
     "titulo": "Diccionario Bruño Bilingüe",
@@ -1629,7 +1569,7 @@
     "ejemplares": 4,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diccionario nilingue.png"
   },
   {
     "titulo": "LONGMAN Diccionario Pocket",
@@ -1641,7 +1581,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/longman.png"
   },
   {
     "titulo": "The university of Chicago Spanish-English",
@@ -1665,10 +1605,10 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/richmond.png"
   },
   {
-    "titulo": "Norma Diccionario Escolar ilustrado",
+    "titulo": "Diccionario Escolar ilustrado",
     "autor": "Norma",
     "editorial": "",
     "nivel": "transversal",
@@ -1677,10 +1617,10 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/escolar.png"
   },
   {
-    "titulo": "Langenscheidt Universal-wörterbuch Spanisch",
+    "titulo": "Langenscheidt Universal-wörterbuch Spanish",
     "autor": "ISBN",
     "editorial": "",
     "nivel": "transversal",
@@ -1701,7 +1641,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas del mundo.png"
   },
   {
     "titulo": "Atlas histórico",
@@ -1713,7 +1653,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas histórico.png"
   },
   {
     "titulo": "Atlas Conpacto",
@@ -1725,19 +1665,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Calendario de festivales del Perú",
-    "autor": "Ministerio del Perú",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "ciencias-sociales",
-    "ejemplares": 9,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas compacto.png"
   },
   {
     "titulo": "Para conocer la constitución de 1993",
@@ -1749,7 +1677,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/conocer la constitución.png"
   },
   {
     "titulo": "Legislación Nacional de Derechos Humanos",
@@ -1765,43 +1693,7 @@
   },
   {
     "titulo": "Diccionario escolar ilustrado",
-    "autor": "Unimundo",
-    "editorial": "",
-    "nivel": "transversal",
-    "grado": null,
-    "area": "consulta-referencia",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Diccionario Bruño ilustrado",
     "autor": "Bruño",
-    "editorial": "",
-    "nivel": "transversal",
-    "grado": null,
-    "area": "consulta-referencia",
-    "ejemplares": 5,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Diccionario de Sinónimo y antónimo",
-    "autor": "Guillermo Delgado C.",
-    "editorial": "",
-    "nivel": "transversal",
-    "grado": null,
-    "area": "consulta-referencia",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Diccionario de sinónimos y antónimos",
-    "autor": "María Moliner",
     "editorial": "",
     "nivel": "transversal",
     "grado": null,
@@ -1809,7 +1701,19 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diccionario ilustrado.png"
+  },
+  {
+    "titulo": "Diccionario de sinónimos y antónimos",
+    "autor": "",
+    "editorial": "",
+    "nivel": "transversal",
+    "grado": null,
+    "area": "consulta-referencia",
+    "ejemplares": 7,
+    "ubicacion": "",
+    "estado": "",
+    "portada": "imagenes/portadas/sinonimo y antonimo.png"
   },
   {
     "titulo": "Orientación vocacional",
@@ -1821,104 +1725,9 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/orientación.png"
   },
-  {
-    "titulo": "La nueva era del sueño",
-    "autor": "Nacho Fernández Vicente Ibáñez",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 12,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Nuestra poesía en el tiempo",
-    "autor": "Antonio colinas",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 6,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Ética",
-    "autor": "José Ramon Ayllón/Aurelio Fernández",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "dpcc",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "ambiental integrados con énfasis en educación en gestión del",
-    "autor": "Ministerio de educación",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 9,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Obras maestras del siglo 20",
-    "autor": "Jean Paul Sartre",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Cuentos reunidos",
-    "autor": "Abraham Valdelomar",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 3,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Un mundo para Julius",
-    "autor": "Alfredo Bryce Echenique",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 4,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Literatura universal",
-    "autor": "Alicia correa Arturo Orozco torre",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
+
   {
     "titulo": "Guía didáctica/comunicación",
     "autor": "Santillana",
@@ -1965,7 +1774,7 @@
     "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/lengua de señas.png"
   },
   {
     "titulo": "Educación y transferencia tecnológica",
@@ -1989,7 +1798,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/economia para todos.png"
   },
   {
     "titulo": "Lineamientos para la educación de una vida sin drogas",
@@ -2049,7 +1858,7 @@
     "ejemplares": 13,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/pais maravilloso.png"
   },
   {
     "titulo": "Los ecosistemas",
@@ -2061,7 +1870,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ecosistemas.png"
   },
   {
     "titulo": "Fenómenos atmosféricos",
@@ -2109,7 +1918,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/costumbres peruanas.png"
   },
   {
     "titulo": "Un pasado de violencia, un futuro de paz",
@@ -2121,7 +1930,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/un pasado de violencia.png"
   },
   {
     "titulo": "Kit de máquinas simples/guía de uso y conservación",
@@ -2133,7 +1942,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/kit de máquinas.png"
   },
   {
     "titulo": "Enciclopedia temática escolar, el gran maestro química.",
@@ -2145,10 +1954,10 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/el gran maestro.png"
   },
   {
-    "titulo": "Atlas del cielo: Un viaje entre estrellas y planetas para",
+    "titulo": "Atlas del cielo: Un viaje entre estrellas y planetas para conocer el universo",
     "autor": "V&D S.A.C",
     "editorial": "",
     "nivel": "transversal",
@@ -2157,7 +1966,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas del cielo.png"
   },
   {
     "titulo": "Geología",
@@ -2169,7 +1978,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/geología.png"
   },
   {
     "titulo": "Guía para la estimulación del desarrollo lógico-matemático",
@@ -2184,18 +1993,6 @@
     "portada": ""
   },
   {
-    "titulo": "Dinosaurios, Los últimos gigantes",
-    "autor": "Panamericana",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "ciencia",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
     "titulo": "Perú, 10 mil años de pintura",
     "autor": "USMP (Universidad San Martin de Porres)",
     "editorial": "",
@@ -2205,7 +2002,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/perú 10000 años.png"
   },
   {
     "titulo": "Mapas en la escuela",
@@ -2229,7 +2026,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/atlas y geografía.png"
   },
   {
     "titulo": "Cuentos peruanos para niños",
@@ -2397,7 +2194,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia matemáticas.png"
   },
   {
     "titulo": "1, 2, 3 juego otra vez (Lógico matemático)",
@@ -2529,7 +2326,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/el mentor.png"
   },
   {
     "titulo": "¿Me ama o no me ama?",
@@ -2541,7 +2338,7 @@
     "ejemplares": 66,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/me ama.png"
   },
   {
     "titulo": "¿Es amor lo que siento?",
@@ -2553,7 +2350,7 @@
     "ejemplares": 25,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/es amor lo que siento.png"
   },
   {
     "titulo": "El gas natural",
@@ -2565,7 +2362,7 @@
     "ejemplares": 16,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/gas natural.png"
   },
   {
     "titulo": "Derechos de autor",
@@ -2613,7 +2410,7 @@
     "ejemplares": 15,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/biodiversidad.png"
   },
   {
     "titulo": "La historia de Francisca",
@@ -2625,7 +2422,7 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia de francisca.png"
   },
   {
     "titulo": "Pepín el niño juguetón",
@@ -2637,7 +2434,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/pepin.png"
   },
   {
     "titulo": "Dorita y sus amigos",
@@ -2649,7 +2446,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/dorita.png"
   },
   {
     "titulo": "Diez Mariposas",
@@ -2661,55 +2458,7 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Cartilla de ciencias sociales: Historia reciente del Perú - 5to",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "ciencias-sociales",
-    "ejemplares": 25,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Ficha de aprendizaje de comunicacion 2do secundaria",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": 2,
-    "area": "comunicacion",
-    "ejemplares": 11,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Ficha de aprendizaje de comunicacion 3ro secundaria",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": 3,
-    "area": "comunicacion",
-    "ejemplares": 3,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Ficha de aprendizaje de comunicacion 4to secundaria",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": 4,
-    "area": "comunicacion",
-    "ejemplares": 2,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diez mariposas.png"
   },
   {
     "titulo": "Ficha de aprendizaje de comunicacion 5to secundaria",
@@ -2721,7 +2470,7 @@
     "ejemplares": 16,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ficha de aprendizaje 5to.png"
   },
   {
     "titulo": "english workbook - 4to secundaria",
@@ -2745,7 +2494,7 @@
     "ejemplares": 17,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/english.png"
   },
   {
     "titulo": "english workbook - 3ro secundaria",
@@ -2769,7 +2518,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/english 3ro.png"
   },
   {
     "titulo": "english student's book - 2do secundaria",
@@ -2805,7 +2554,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/english 5to.png"
   },
   {
     "titulo": "La biblia de la fisica y química",
@@ -2817,19 +2566,19 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/la biblia de fisica.png"
   },
   {
     "titulo": "Diccionario de la lengua española",
     "autor": "",
-    "editorial": "",
+    "editorial": "norma",
     "nivel": "transversal",
     "grado": null,
     "area": "consulta-referencia",
     "ejemplares": 19,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/diccionario de lengua española.png"
   },
   {
     "titulo": "La biblia de las ciencias naturales",
@@ -2841,7 +2590,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ciencias naturales.png"
   },
   {
     "titulo": "Historia del perú",
@@ -2853,7 +2602,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia del perú.png"
   },
   {
     "titulo": "Erase una vez un hombre",
@@ -2865,7 +2614,7 @@
     "ejemplares": 156,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/erase una vez.png"
   },
   {
     "titulo": "Historia del peru contemporaneo",
@@ -2877,7 +2626,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/perú contemporáneo.png"
   },
   {
     "titulo": "Historia universal",
@@ -2889,7 +2638,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/historia universal.png"
   },
   {
     "titulo": "Las lenguas del perú",
@@ -2913,7 +2662,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/mercados.png"
   },
   {
     "titulo": "Planeamimento estratégico para micro y pequeña empresa",
@@ -2937,7 +2686,7 @@
     "ejemplares": 5,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/aspectos basicos.png"
   },
   {
     "titulo": "Gestionando tu propia empresa",
@@ -2949,19 +2698,19 @@
     "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/propia empresa.png"
   },
   {
     "titulo": "Gran Atlas (Físico y político del mundo)",
     "autor": "",
-    "editorial": "",
+    "editorial": "National Geographic",
     "nivel": "transversal",
     "grado": null,
     "area": "consulta-referencia",
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/gran atlas.png"
   },
   {
     "titulo": "Atlas geográfico del perú",
@@ -2985,7 +2734,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/procedimientos.png"
   },
   {
     "titulo": "Fisica conceptual",
@@ -2997,7 +2746,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/fisica conceptual.png"
   },
   {
     "titulo": "Historia y Geografía del Perú y del mundo",
@@ -3045,7 +2794,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/iberoamerica 4to.png"
   },
   {
     "titulo": "La historia de iberoamérica desde los niños \"3\"",
@@ -3057,7 +2806,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/iberoamerica 3ro.png"
   },
   {
     "titulo": "La historia de iberoamérica desde los niños \"1\"",
@@ -3069,7 +2818,7 @@
     "ejemplares": 11,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/iberoamerica 1ro.png"
   },
   {
     "titulo": "Historia del mundo contemporáneo",
@@ -3093,7 +2842,7 @@
     "ejemplares": 15,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/enciclopedia ilustrada.png"
   },
   {
     "titulo": "Educación física",
@@ -3105,7 +2854,7 @@
     "ejemplares": 12,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/educacion fisica.png"
   },
   {
     "titulo": "Biblioteca de aula - Ciencias",
@@ -3249,19 +2998,7 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Comunicación - 4to de primaria",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "primaria",
-    "grado": 4,
-    "area": "comunicacion",
-    "ejemplares": 4,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/personal social.png"
   },
   {
     "titulo": "Personal Social - 3ro de primaria",
@@ -3273,7 +3010,7 @@
     "ejemplares": 21,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/personal social 3ro.png"
   },
   {
     "titulo": "Cuadernillo de matemática - 3ro primaria",
@@ -3285,7 +3022,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuadernillo 3ro.png"
   },
   {
     "titulo": "Enciclopedia de la historia general del Peru",
@@ -3390,10 +3127,10 @@
     "nivel": "secundaria",
     "grado": null,
     "area": "ciencia",
-    "ejemplares": 5,
+    "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/dinosaurios.png"
   },
   {
     "titulo": "Animales y plantas en peligro de extinción",
@@ -3453,7 +3190,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/ser niños.png"
   },
   {
     "titulo": "Qinti y la capa de la luna",
@@ -3465,7 +3202,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/qinti.png"
   },
   {
     "titulo": "La niña de los gorriones",
@@ -3477,10 +3214,10 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/gorriones.png"
   },
   {
-    "titulo": "Intipa, árbol del sol",
+    "titulo": "Intimpa, árbol del sol",
     "autor": "MINEDU",
     "editorial": "",
     "nivel": "secundaria",
@@ -3489,7 +3226,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/intimpa.png"
   },
   {
     "titulo": "Romeo and Juliet",
@@ -3525,7 +3262,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/hermosa experiencia.png"
   },
   {
     "titulo": "Cuadernillo de comunicación - 2do Primaria",
@@ -3537,7 +3274,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuadernillo 2do.png"
   },
   {
     "titulo": "Cuadernillo de matemática - 2do Primaria",
@@ -3549,7 +3286,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuadernillo matematica 2do.png"
   },
   {
     "titulo": "Texto de comunicación - 6to Primaria",
@@ -3561,7 +3298,7 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 6to.png"
   },
   {
     "titulo": "Texto de comunicación - 5to Primaria",
@@ -3573,7 +3310,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 5to.png"
   },
   {
     "titulo": "Texto de comunicación - 4to Primaria",
@@ -3582,10 +3319,10 @@
     "nivel": "primaria",
     "grado": 4,
     "area": "comunicacion",
-    "ejemplares": 12,
+    "ejemplares": 16,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 4to.png"
   },
   {
     "titulo": "Texto de comunicación - 3ero Primaria",
@@ -3597,10 +3334,10 @@
     "ejemplares": 14,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/communicacion 3ro.png"
   },
   {
-    "titulo": "Matematica 5 - 5to primaria",
+    "titulo": "Matematica - 5to primaria",
     "autor": "MINEDU",
     "editorial": "",
     "nivel": "primaria",
@@ -3609,7 +3346,7 @@
     "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matematica 5to.png"
   },
   {
     "titulo": "Cuadernillo de fichas - Ciencia y ambiente - 5to primaria",
@@ -3624,7 +3361,7 @@
     "portada": ""
   },
   {
-    "titulo": "Personal Social 5 - 5to primaria",
+    "titulo": "Personal Social - 5to primaria",
     "autor": "MINEDU",
     "editorial": "",
     "nivel": "primaria",
@@ -3633,7 +3370,7 @@
     "ejemplares": 21,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/personal social 5to.png"
   },
   {
     "titulo": "Cuaderno de trabajo: Comunicación - 5to primaria",
@@ -3657,7 +3394,7 @@
     "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuaderno trabajo 5to.png"
   },
   {
     "titulo": "Cuaderno de fichas fuentes historicas - 4to secundaria",
@@ -3681,7 +3418,7 @@
     "ejemplares": 56,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/antologia 5to.png"
   },
   {
     "titulo": "Cuaderno de trabajo: Historia, geografia y economia - 5to secundaria",
@@ -3693,7 +3430,7 @@
     "ejemplares": 7,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuaderno trabajo 5to.png"
   },
   {
     "titulo": "Texto escolar: comunicación - 4to secundaria",
@@ -3705,7 +3442,7 @@
     "ejemplares": 22,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicación 4to.png"
   },
   {
     "titulo": "Cuaderno de trabajo: comunicación - 4to secundaria",
@@ -3717,7 +3454,7 @@
     "ejemplares": 9,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/cuaderno trabajo 4to.png"
   },
   {
     "titulo": "Cuaderno de trabajo: Comunicación - 5to primaria",
@@ -3753,19 +3490,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Cuaderno de trabajo de comunicación: comprensión lectora -",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": null,
-    "area": "comunicacion",
-    "ejemplares": 1,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/antologia 1ro.png"
   },
   {
     "titulo": "Guía de actividades: ciencia, tecnologia y ambiente - 1ero",
@@ -3933,7 +3658,7 @@
     "ejemplares": 3,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 1ro.png"
   },
   {
     "titulo": "Texto de matemática - 1ero secundaria",
@@ -3945,7 +3670,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matematica 1ro.png"
   },
   {
     "titulo": "Texto de comunicación - 2do secundaria",
@@ -3957,7 +3682,7 @@
     "ejemplares": 8,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 2do.png"
   },
   {
     "titulo": "Texto de matemática - 2do secundaria",
@@ -3969,7 +3694,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matematica 2do.png"
   },
   {
     "titulo": "Texto de comunicación - 3ero secundaria",
@@ -3981,19 +3706,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
-  },
-  {
-    "titulo": "Texto de comunicación - 4to secundaria",
-    "autor": "MINEDU",
-    "editorial": "",
-    "nivel": "secundaria",
-    "grado": 4,
-    "area": "comunicacion",
-    "ejemplares": 4,
-    "ubicacion": "",
-    "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 3ro secundaria.png"
   },
   {
     "titulo": "Texto de matemática - 4to secundaria",
@@ -4005,7 +3718,7 @@
     "ejemplares": 2,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matematica 4to.png"
   },
   {
     "titulo": "Texto de comunicación - 5to secundaria",
@@ -4017,7 +3730,7 @@
     "ejemplares": 6,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/comunicacion 5to secundaria.png"
   },
   {
     "titulo": "Texto de matemática - 5to secundaria",
@@ -4221,7 +3934,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/matemática primaria.png"
   },
   {
     "titulo": "Razonamiento Matematico - 6to primaria",
@@ -4233,7 +3946,7 @@
     "ejemplares": 1,
     "ubicacion": "",
     "estado": "",
-    "portada": ""
+    "portada": "imagenes/portadas/razonamiento matemático.png"
   },
   {
     "titulo": "Vida y ciencia - 6to primaria",
