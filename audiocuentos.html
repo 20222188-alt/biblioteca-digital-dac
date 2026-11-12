@@ -1,1 +1,211 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Audiocuentos | Biblioteca DAC</title><link rel="stylesheet" href="estilos.css"></head><body><header><strong>📚 Biblioteca Digital · I.E. N.º 1206 DAC</strong><a href="index.html">Inicio</a></header><section class="hero"><h1>Audiocuentos</h1><p>Recursos digitales</p></section><main class="container"><a class="back" href="index.html">← Volver al inicio</a><div class="empty">Esta sección está lista para incorporar los recursos digitales originales de tu proyecto.</div></main><footer>I.E. N.º 1206 «Daniel Alcides Carrión» · Biblioteca Digital</footer></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audiocuentos | Biblioteca DAC</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        .audio-intro {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .audio-intro h2 {
+            color: #123b68;
+            margin-bottom: 10px;
+        }
+
+        .audio-intro p {
+            color: #64748b;
+        }
+
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(260px, 1fr)
+            );
+            gap: 20px;
+            margin: 25px 0 45px;
+        }
+
+        .audio-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: 0 4px 14px rgba(0,40,90,.07);
+            transition: .2s;
+        }
+
+        .audio-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,40,90,.12);
+        }
+
+        .audio-icon {
+            width: 60px;
+            height: 60px;
+            background: #e8f3ff;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+        .audio-card h2 {
+            color: #123b68;
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .audio-card p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .audio-card audio {
+            width: 100%;
+            display: block;
+        }
+
+        .audio-count {
+            color: #174b80;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <strong>📚 Biblioteca Digital · I.E. N.º 1206 DAC</strong>
+    <a href="index.html">Inicio</a>
+</header>
+
+<section class="hero">
+    <h1>🎧 Audiocuentos</h1>
+    <p>Escucha, imagina y disfruta de nuevas historias</p>
+</section>
+
+<main class="container">
+
+    <a class="back" href="index.html">
+        ← Volver al inicio
+    </a>
+
+    <div class="audio-intro">
+        <h2>Explora nuestros audiocuentos</h2>
+        <p>
+            Selecciona una historia y presiona
+            reproducir para escucharla.
+        </p>
+        <p class="audio-count" id="contador"></p>
+    </div>
+
+    <div class="audio-grid" id="lista-audios"></div>
+
+</main>
+
+<footer>
+    I.E. N.º 1206 «Daniel Alcides Carrión» · Biblioteca Digital
+</footer>
+
+<script>
+async function cargarAudiocuentos() {
+
+    const contenedor =
+        document.getElementById("lista-audios");
+
+    const contador =
+        document.getElementById("contador");
+
+    try {
+        const respuesta =
+            await fetch("datos/audiocuentos.json");
+
+        if (!respuesta.ok) {
+            throw new Error("No se pudo cargar el catálogo");
+        }
+
+        const cuentos = await respuesta.json();
+
+        if (!Array.isArray(cuentos)) {
+            throw new Error("Formato JSON incorrecto");
+        }
+
+        contador.textContent =
+            cuentos.length + " audiocuentos disponibles";
+
+        if (cuentos.length === 0) {
+            contenedor.textContent =
+                "Todavía no hay audiocuentos disponibles.";
+            return;
+        }
+
+        cuentos.forEach(cuento => {
+
+            const tarjeta =
+                document.createElement("article");
+            tarjeta.className = "audio-card";
+
+            const icono =
+                document.createElement("div");
+            icono.className = "audio-icon";
+            icono.textContent = "🎧";
+
+            const titulo =
+                document.createElement("h2");
+            titulo.textContent = cuento.titulo;
+
+            const descripcion =
+                document.createElement("p");
+            descripcion.textContent =
+                "Presiona reproducir para escuchar el cuento.";
+
+            const reproductor =
+                document.createElement("audio");
+            reproductor.controls = true;
+            reproductor.preload = "none";
+            reproductor.src = cuento.audio;
+
+            tarjeta.append(
+                icono,
+                titulo,
+                descripcion,
+                reproductor
+            );
+
+            contenedor.appendChild(tarjeta);
+        });
+
+        // Solo un audiocuento sonará a la vez
+        const reproductores =
+            document.querySelectorAll(".audio-card audio");
+
+        reproductores.forEach(audio => {
+            audio.addEventListener("play", () => {
+                reproductores.forEach(otro => {
+                    if (otro !== audio) {
+                        otro.pause();
+                    }
+                });
+            });
+        });
+
+    } catch (error) {
+        console.error(error);
+        contenedor.textContent =
+            "No se pudieron cargar los audiocuentos.";
+    }
+}
+
+cargarAudiocuentos();
+</script>
+
+</body>
+</html>
