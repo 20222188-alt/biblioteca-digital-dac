@@ -1,14 +1,43 @@
+
 [
   {
-    "titulo": "EL_ESPEJO_DE_LA_VERDAD",
-    "autor": "",
-    "audio": "audios/EL_ESPEJO_DE_LA_VERDAD.mp3",
-    "portada": ""
+    "titulo": "El espejo de la verdad",
+    "audio": "audios/EL_ESPEJO_DE_LA_VERDAD.mp3"
   },
   {
-    "titulo": "EL_HUESPED_DE_LA_HABITACION_13",
-    "autor": "",
-    "audio": "audios/EL_HUESPED_DE_LA_HABITACION_13.mp3",
-    "portada": ""
+    "titulo": "El huésped de la habitación 13",
+    "audio": "audios/EL_HUESPED_DE_LA_HABITACION_13.mp3"
+  },
+  {
+    "titulo": "El trío artístico",
+    "audio": "audios/EL_TRIO_ARTISTICO.mp3"
+  },
+  {
+    "titulo": "La princesa que no necesita un príncipe",
+    "audio": "audios/LA_PRINCESA_QUE_NO_NECESITA_UN_PRÍNCIPE.mp3"
+  },
+  {
+    "titulo": "La última estrella de la galaxia",
+    "audio": "audios/LA_ULTIMA_ESTRELLA_DE_LA_GALAXIA.mp3"
+  },
+  {
+    "titulo": "Mi profesor es un gato",
+    "audio": "audios/MI_PROFESOR_ES_UN_GATO.mp3"
+  },
+  {
+    "titulo": "Puerta a media noche",
+    "audio": "audios/PUERTA_A_MEDIA_NOCHE.mp3"
+  },
+  {
+    "titulo": "Una carta de amor",
+    "audio": "audios/UNA_CARTA_DE_AMOR.mp3"
+  },
+  {
+    "titulo": "Una chica que habla con los animales",
+    "audio": "audios/UNA_CHICA_QUE_HABLA_CON_LOS_ANIMALES.mp3"
+  },
+  {
+    "titulo": "Un verano sin ti",
+    "audio": "audios/UN_VERANO_SIN_TI.mp3"
   }
 ]
