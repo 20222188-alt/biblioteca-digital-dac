@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "titulo": "EL_ESPEJO_DE_LA_VERDAD",
+    "autor": "",
+    "audio": "audios/EL_ESPEJO_DE_LA_VERDAD.mp3",
+    "portada": ""
+  },
+  {
+    "titulo": "EL_HUESPED_DE_LA_HABITACION_13",
+    "autor": "",
+    "audio": "audios/EL_HUESPED_DE_LA_HABITACION_13.mp3",
+    "portada": ""
+  }
+]
