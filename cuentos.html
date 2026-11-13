@@ -1,1 +1,134 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cuentos digitales | Biblioteca DAC</title><link rel="stylesheet" href="estilos.css"></head><body><header><strong>📚 Biblioteca Digital · I.E. N.º 1206 DAC</strong><a href="index.html">Inicio</a></header><section class="hero"><h1>Cuentos digitales</h1><p>Recursos digitales</p></section><main class="container"><a class="back" href="index.html">← Volver al inicio</a><div class="empty">Esta sección está lista para incorporar los recursos digitales originales de tu proyecto.</div></main><footer>I.E. N.º 1206 «Daniel Alcides Carrión» · Biblioteca Digital</footer></body></html>
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuentos digitales | Biblioteca DAC</title>
+  <link rel="stylesheet" href="estilos.css">
+
+  <style>
+    .cuentos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+
+    .cuento-card {
+      background: white;
+      border: 1px solid #dce6f0;
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .cuento-card h3 {
+      color: #174a80;
+      margin: 12px 0;
+    }
+
+    .cuento-card p {
+      color: #64748b;
+    }
+
+    .cuento-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #1769aa;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cuento-card a:hover {
+      background: #104d80;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <strong>📚 Biblioteca Digital · I.E. N.º 1206 DAC</strong>
+    <a href="index.html">Inicio</a>
+  </header>
+
+  <section class="hero">
+    <h1>Cuentos digitales</h1>
+    <p>Descubre historias y disfruta de la lectura</p>
+  </section>
+
+  <main class="container">
+
+    <a class="back" href="index.html">← Volver al inicio</a>
+
+    <div id="lista-cuentos" class="cuentos-grid">
+      <p>Cargando cuentos digitales...</p>
+    </div>
+
+  </main>
+
+  <footer>
+    I.E. N.º 1206 «Daniel Alcides Carrión» · Biblioteca Digital
+  </footer>
+
+  <script>
+    async function cargarCuentos() {
+      const contenedor = document.getElementById("lista-cuentos");
+
+      try {
+        const respuesta = await fetch("datos/cuentos.json");
+
+        if (!respuesta.ok) {
+          throw new Error("No se pudo cargar el archivo JSON");
+        }
+
+        const cuentos = await respuesta.json();
+
+        contenedor.innerHTML = "";
+
+        if (!Array.isArray(cuentos) || cuentos.length === 0) {
+          contenedor.textContent = "Todavía no hay cuentos disponibles.";
+          return;
+        }
+
+        cuentos.forEach(cuento => {
+          const tarjeta = document.createElement("div");
+          tarjeta.className = "cuento-card";
+
+          const icono = document.createElement("div");
+          icono.textContent = "📖";
+          icono.style.fontSize = "45px";
+
+          const titulo = document.createElement("h3");
+          titulo.textContent = cuento.titulo || "Sin título";
+
+          const autor = document.createElement("p");
+          autor.textContent = "Autor: " + (cuento.autor || "No especificado");
+
+          const enlace = document.createElement("a");
+          enlace.textContent = "Leer cuento";
+          enlace.href = cuento.archivo;
+          enlace.target = "_blank";
+          enlace.rel = "noopener noreferrer";
+
+          tarjeta.append(icono, titulo, autor, enlace);
+          contenedor.appendChild(tarjeta);
+        });
+
+      } catch (error) {
+        contenedor.textContent =
+          "No se pudieron cargar los cuentos digitales.";
+        console.error(error);
+      }
+    }
+
+    cargarCuentos();
+  </script>
+
+</body>
+</html>
